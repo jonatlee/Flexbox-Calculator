@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script type="text/javascript" src="scripts/index.js"></script> 
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="flex-container-outer">
+        <div class="flex-container-inner">
+            <span id="display"></span>
+        </div>
+        <div class="flex-container-inner">
+            <div class="flex-item flip" onclick="flipSign()">+/-</div>
+            <div class="flex-item" id="/" onclick="setValue(this.id)">/</div>
+        </div>
+        <div class="flex-container-inner">
+            <div class="flex-item" id="7" onclick="setValue(this.id)">7</div>
+            <div class="flex-item" id="8" onclick="setValue(this.id)">8</div>
+            <div class="flex-item" id="9" onclick="setValue(this.id)">9</div>
+            <div class="flex-item" id="*" onclick="setValue(this.id)">*</div>
+        </div>
+        <div class="flex-container-inner">
+            <div class="flex-item" id="4" onclick="setValue(this.id)">4</div>
+            <div class="flex-item" id="5" onclick="setValue(this.id)">5</div>
+            <div class="flex-item" id="6" onclick="setValue(this.id)">6</div>
+            <div class="flex-item" id="-" onclick="setValue(this.id)">-</div>
+        </div>
+        <div class="flex-container-inner">
+            <div class="flex-item" id="1" onclick="setValue(this.id)">1</div>
+            <div class="flex-item" id="2" onclick="setValue(this.id)">2</div>
+            <div class="flex-item" id="3" onclick="setValue(this.id)">3</div>
+            <div class="flex-item" id="+" onclick="setValue(this.id)">+</div>
+        </div>
+        <div class="flex-container-inner">
+            <div class="flex-item" id="0" onclick="setValue(this.id)">0</div>
+            <div class="flex-item" id="." onclick="setValue(this.id)">.</div>
+            <div class="flex-item" onclick="clearValue()">CE</div>
+            <div class="flex-item" onclick="evaluateExpression()">=</div>
+        </div>
+    </div>
+</body>

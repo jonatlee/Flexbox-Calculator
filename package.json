@@ -1,0 +1,14 @@
+{ 
+    "name": "Calculator", 
+    "version": "1.0.0", 
+    "description": "A calculator", 
+    "scripts": { 
+      "lite": "lite-server --port 10001", 
+      "start": "yarn run lite" 
+    }, 
+    "author": "", 
+    "license": "ISC", 
+    "devDependencies": { 
+      "lite-server": "^1.3.1" 
+    } 
+ }
