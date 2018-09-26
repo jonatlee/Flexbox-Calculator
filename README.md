@@ -3,3 +3,5 @@ A simple calculator able to perform addition, subtraction, multiplication, divis
 Implemented using HTML, CSS (flexbox), and JavaScript. Used a dark grey background.
 
 ![picture](images/calculator.PNG)
+
+JSFiddle: https://jsfiddle.net/oz9a47h5/
