@@ -27,6 +27,7 @@ numDecimals = () => {
     return decimals;
 }
 
+//Truncate values over 10 digits into scientific notation
 truncateScientificNotation = (str) => {
     if (str.length >= 10) {
         var decimal = str.slice(0, 5);
@@ -38,6 +39,7 @@ truncateScientificNotation = (str) => {
     }
 }
 
+//Cut off length of decimal expression to 10
 truncateDecimal = (str) => {
     return str.slice(0, 9);
 }
@@ -86,7 +88,13 @@ setValue = (newValue) => {
                 expression = currNum;
             }
         } else {
-            currNum += newValue;
+            if (currNum == "0" && newValue == 0) {
+                return;
+            } else if (currNum == "0" && newValue != ".") {
+                currNum = newValue;
+            } else {
+                currNum += newValue;
+            }
         }
 
         document.getElementById("display").textContent = currNum;
