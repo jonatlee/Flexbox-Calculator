@@ -9,4 +9,4 @@ Implemented using HTML, CSS (flexbox), and JavaScript. Used a dark grey backgrou
 - If number calculated is over 1000000, converts to scientific notation using at most 3 decimals.
 
 # JSFiddle
-Try it out with JSFiddle: https://jsfiddle.net/oz9a47h5/
+Try it out with JSFiddle: https://jsfiddle.net/oz9a47h5/1/
